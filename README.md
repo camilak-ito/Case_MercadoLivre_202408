@@ -27,6 +27,16 @@ Data: 18/08/2024
 
     ![Imagem do dashboard final](./Tableau/Dashboard.png "Imagem do dashboard final")
 
+### Conclusão
+
+Com base nas análises, podemos identificar algumas possíveis causas para o crescimento da internet na Argentina:
+
+- **Urbanização**: A correlação forte entre usuários de internet e população urbana pode indicar que a urbanização pode ter facilitado o acesso à internet devido à melhor infraestrutura nestas áreas. Entre o uso de internet para fins pessoais e também profissionais dentro das empresas que dependem cada vez mais do uso de internet.
+
+- **Acesso à banda larga em dispositivos móveis**: A correlação entre usuários de internet e assinaturas de celular possibilita o entendimento de que o aumento no uso de dispositivos móveis facilitou o acesso à internet, chegando ao ponto de ter mais de uma assinatura por habitante no país, tendência que se inverteu em meados de 2013-2014.
+
+- **População de 0-14**: Maior utilização de internet nesta faixa etária apesar de sua menor representatividade perante a população total.
+
 ### Entregáveis
 
 - [**Visualização no Tableau Public**](https://public.tableau.com/app/profile/camila.ito/viz/ML_CASE/Dashboard)
