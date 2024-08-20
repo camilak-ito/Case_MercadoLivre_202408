@@ -1,6 +1,6 @@
 --  1. Listar os usuários que fazem aniversário hoje e cuja quantidade de vendas realizadas em janeiro de 2020 seja superior a 1500.
 
---  Utiliza uma CTE (VendasJaneiro2020) para calcular a quantidade de vendas 
+--  Foi construída uma CTE (VendasJaneiro2020) para calcular a quantidade de vendas 
 -- realizadas em janeiro de 2020 por cada cliente. Em seguida, a consulta principal 
 -- seleciona os clientes que fazem aniversário hoje e que realizaram mais de 1500 vendas em janeiro de 2020.
 WITH VendasJaneiro2020 AS (
@@ -26,7 +26,7 @@ WHERE
 
 -- 2. Para cada mês de 2020, solicita-se o top 5 de usuários que mais venderam ($) na categoria Celulares.
 
--- Utiliza uma CTE (Vendas) para calcular as vendas mensais de 2020 na categoria "Celulares" 
+-- Foi construída uma CTE (Vendas) para calcular as vendas mensais de 2020 na categoria "Celulares" 
 -- e classificar os clientes por valor total transacionado. A consulta principal seleciona os top 5 clientes para cada mês.
 WITH Vendas AS (
     SELECT 
@@ -62,7 +62,7 @@ WHERE
 --3. Preencher uma nova tabela com o preço e status dos Itens ao final do dia (Stored Procedure).
 
 
--- Nova tabela para armazenar o histórico dos itens
+-- Foi criada uma nova tabela para armazenar o histórico dos itens.
 CREATE TABLE ItemHistory (
     item_id INT,
     data_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -72,8 +72,9 @@ CREATE TABLE ItemHistory (
 
     PRIMARY KEY (item_id, data_registro)
 );
+
+-- Foi criada uma Stored Procedure (AtualizarItemHistory) que insere o estado atual dos itens na tabela de histórico.
 -- Agendar a stored procedure para executar diariamente
--- Selecionar o status atual dos itens e inserir esses dados na tabela de histórico (ItemHistory).
 CREATE PROCEDURE UpdateItemHistory()
 BEGIN
     -- Insere o status atual dos itens na tabela de histórico
