@@ -1,4 +1,4 @@
-## Case Mercado Livre - Camila Kaori Ito
+## Challenge Analytics - Camila Kaori Ito
 Data: 18/08/2024
 
 ### Fluxo de análise
