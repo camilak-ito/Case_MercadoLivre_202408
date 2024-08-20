@@ -38,7 +38,7 @@ CREATE TABLE Order (
 );
 
 -- Criação da tabela OrderItem (tabela de relacionamento entre Order e Item)
-CREATE TABLE OrderItem (
+CREATE TABLE Order_Item (
     order_id INT,
     item_id INT,
     quantidade INT NOT NULL,
